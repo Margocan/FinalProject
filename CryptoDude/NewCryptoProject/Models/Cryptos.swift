@@ -12,6 +12,7 @@ class Crypto: Codable {
     let price_usd:Float?
     let id_icon: String?
     var imageUrl: String?
+    var isFavorite: Bool?
     
     init(asset_id: String?, name: String?, price_usd: Float?, id_icon: String?, imageUrl: String? = nil) {
         self.asset_id = asset_id
@@ -19,5 +20,6 @@ class Crypto: Codable {
         self.price_usd = price_usd
         self.id_icon = id_icon
         self.imageUrl = imageUrl
+        
     }
 }

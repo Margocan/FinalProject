@@ -27,6 +27,10 @@ final class CryptoCell: UITableViewCell {
     }
     
     @IBAction func addToBookmarkTapped(_ sender: Any) {
+        
+        
+        
+        
         delegate?.addToBookMark(index)
     }
 }

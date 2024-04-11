@@ -63,7 +63,8 @@ extension WatchListVC {
             if let name = result.value(forKey: "name") as? String,
                let id = result.value(forKey: "id") as? String,
                let price = result.value(forKey: "price") as? Float,
-               let url = result.value(forKey: "url") as? String {
+               let url = result.value(forKey: "url") as? String,
+               let fav = result.value(forKey: "isFavorite") as? Bool {
                 savedList.append(.init(asset_id: id, name: name, price_usd: price, id_icon: nil, imageUrl: url))
             }
         }

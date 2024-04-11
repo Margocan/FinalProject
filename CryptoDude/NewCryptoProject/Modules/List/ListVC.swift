@@ -49,11 +49,12 @@ extension ListVC {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bookmark.fill"), style: .done, target: self, action: #selector(favButtonTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bookmark"), style: .done, target: self, action: #selector(favButtonTapped))
         tableView.dataSource = self
     }
     
     @objc func favButtonTapped() {
+        
         self.navigationController?.pushViewController(WatchListVC(), animated: true)
     }
     
